@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form with CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        position: relative;
+        top: 90px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #Password,input[type="text"] {
+        width: 97%;
+        height: 23px;
+        padding: 8px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Employee Details</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="Employee name"
+            name="username"
+            placeholder="Employee user Id"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="Password">Password:</label>
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            placeholder="Enter Password"
+            required
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

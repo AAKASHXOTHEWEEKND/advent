@@ -1,0 +1,117 @@
+
+
+
+
+<%- include('template.ejs') %>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Details</h2>
+    <form action="/page1" method = "post">
+      <div class="form-group">
+        <label for="codeno">Codeno:</label>
+        <input type="text" id="codeno" name="codeno" placeholder="Enter Codeno" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter Location" required>
+      </div>
+      <div class="form-group">
+        <label for="width">Width:</label>
+        <input type="number" id="width" name="width" placeholder="Enter Width" required>
+      </div>
+      <div class="form-group">
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height" placeholder="Enter Height" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" placeholder="Enter type" required>
+      </div>
+      <div class="form-group">
+        <label for="landlordname">LandLord Name: </label>
+        <input type="text" id="landlordname" name="landlordname" placeholder="Enter land lord name" required>
+      </div>
+      <div class="form-group">
+        <label for="sday">Start Date:</label>
+        <input type="date" id="sday" name="sday" required>
+      </div>
+      <div class="form-group">
+        <label for="eday">End Date:</label>
+        <input type="date" id="eday" name="eday" required>
+      </div>
+      <div class="form-group">
+        <label for="returnamount">Rent amount:</label>
+        <input type="number" id="returnamount" name="returnamount" placeholder="Enter amount" required>
+      </div>
+      <div class="form-group">
+        <label for="mcvtax">Enter MCV Tax:</label>
+        <input type="number" name="mcvtax" id="mcvtax" placeholder="Enter mcv tax" required>
+      </div>
+      <img src="uploads\1692684245531-WhatsApp Image 2023-08-03 at 08.33.44.jpg" alt="Uploaded Image">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
